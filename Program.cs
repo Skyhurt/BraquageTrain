@@ -28,12 +28,12 @@ class Program
         int check = 0;
         for (int i = 1; i <= numberWagon; i++)
         {
-            Console.WriteLine("Wagon " + i + " - ");
-
             for (int j = 1; j <= numberChest; j++)
             {
-                Console.WriteLine("Coffre " + j + " inspecté.");
+                Console.WriteLine("Wagon " + i + " - Coffre " + j + " inspecté.");
+                check++;
             }
         }
+        Console.WriteLine("Total : " + check + " coffres inspectés.");
     }
 }
